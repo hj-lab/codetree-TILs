@@ -8,10 +8,10 @@ int main() {
 
     if(middle>=90){
         if(last>=95){
-            money = 10;
+            money = 100000;
         }
         else if(last>=90){
-            money = 5;
+            money = 50000;
         }
     }
     else{
