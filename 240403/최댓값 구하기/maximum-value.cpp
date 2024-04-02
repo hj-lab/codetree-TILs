@@ -12,6 +12,11 @@ int main() {
             max = c;
         }
     }
+    else{
+        if(max<c){
+            max = c;
+        }
+    }
 
     cout<<max;
     return 0;
