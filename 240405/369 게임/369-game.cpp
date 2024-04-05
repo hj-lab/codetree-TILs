@@ -8,7 +8,7 @@ int main() {
     int ten = (n%100 - one)/10; // 십의자리
 
     for(int i=1; i<n+1; i++){
-        if((i%3==0)|| (i==one) || (i==ten*10+one) || (i==ten) || (i==one*10+ten)){
+        if((i%3==0)|| (i%10 == one||ten) || ((i%100-i%10)/10==one||ten) ){
             cout<<"0"<<" ";
         }
         else{
