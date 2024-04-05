@@ -4,14 +4,15 @@ int main() {
     int n;
     cin>>n;
     
-    int one = n%10; // 일의자리
-    int ten = (n%100 - one)/10; // 십의자리
-
-    cout<<one<<" "<<ten<<" "<<endl;
-
     for(int i=1; i<n+1; i++){
-        if((i%3==0)|| (i%10 == one||ten) || ((i%100-i%10)/10==one||ten) ){
-            cout<<"0"<<" ";
+        if(i%3==0){
+            cout<<"0 ";
+        }
+        else if(i%10 == 3 || i%10 == 6 || i%10 == 9){
+            cout<<"0 ";
+        }
+        else if(i/10 == 3 || i/10 == 6 || i/10 == 9){
+            cout<<"0 ";
         }
         else{
             cout<<i<<" ";
