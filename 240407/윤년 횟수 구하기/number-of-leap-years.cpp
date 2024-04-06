@@ -12,6 +12,7 @@ int main() {
                 break;
             }
             else{
+                cout<<i<<" ";
                 cnt++;
             }
         }
