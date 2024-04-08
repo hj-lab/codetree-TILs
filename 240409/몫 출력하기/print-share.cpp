@@ -2,7 +2,7 @@
 using namespace std;
 int main() {
     int cnt = 0;
-    while(cnt<3){
+    while(cnt<=3){
         int number;
         cin>>number;
 
