@@ -8,9 +8,10 @@ int main() {
 
         if(number%2 == 0){
             cout<<number/2<<endl;
+            cnt++;
         }
 
-        cnt++;
+        
     }
     return 0;
 }
