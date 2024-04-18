@@ -7,11 +7,11 @@ int main() {
 
     for(int i=0; i<n; i++){
         for(int j=0; j<=i; j++){
-            if((char)ascii == 'Z'){
-                ascii = 65;
-            }
             cout<<(char)ascii;
             ascii++;
+            if((char)ascii == 'Z'){
+                    ascii = 65;
+            }
         }
         cout<<endl;
     }
