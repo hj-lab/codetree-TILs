@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 int main() {
+    cout<<fixed;
+    cout.precision(1);
+    
     double score[8] = {};
     double sum = 0;
     double average = 0;
