@@ -8,7 +8,7 @@ int main() {
     int arr[100];
 
     for(int i=0; i<100; i++){
-        arr[i] = (i+1)*4;
+        arr[i] = (i+1)*num;
         cout<<arr[i]<<" ";
 
         if(arr[i] % 5 == 0){
