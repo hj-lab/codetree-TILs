@@ -12,6 +12,11 @@ int main() {
         cin>>arr[i];
         if(arr[i] < min_val){
             min_val = arr[i];
+        }
+    }
+
+    for(int i=0; i<n; i++){
+        if(arr[i] == min_val){
             cnt++;
         }
     }
