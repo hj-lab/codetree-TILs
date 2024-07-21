@@ -14,25 +14,18 @@ int main() {
         cin>>arrB[i];
     }
 
-    // b의 첫번째 원소가 나오는 index를 저장해놓고 거기부터 따져보기
-    bool isRight = false;
-    // a의 N번째에 b의 첫번째 원소가 있음을 담고 있다
-    int isSequence[b] = {0,};
+    bool isRight;
 
     for(int i=0; i<a; i++){
-        if(arrA[i] == arrB[0]){
-            isSequence[i] = i;
+        isRight = true;
+        for(int j=0; j<b; j++){
+            if(arrA[i+j] != arrB[j]){
+                isRight = false;
+                break;
+            }
         }
     }
 
-    for(int i=0; i<b; i++){
-        if(arrA[isSequence[i]] != arrB[i]){
-            break;
-        }
-        else{
-            isRight = true;
-        }
-    }
 
     if(isRight == true){
         cout<<"Yes";
