@@ -14,7 +14,7 @@ int main() {
         cin>>arrB[i];
     }
 
-    bool isRight = fals;
+    bool isRight = false;
 
     for(int i=0; i<=a-b; i++){
         isRight = true;
