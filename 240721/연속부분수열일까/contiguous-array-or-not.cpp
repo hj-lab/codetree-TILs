@@ -14,7 +14,7 @@ int main() {
         cin>>arrB[i];
     }
 
-    bool isRight;
+    bool isRight = fals;
 
     for(int i=0; i<=a-b; i++){
         isRight = true;
@@ -24,10 +24,14 @@ int main() {
                 break;
             }
         }
+
+        if(isRight){
+            break;
+        }
     }
 
 
-    if(isRight == true){
+    if(isRight){
         cout<<"Yes";
     }
     else{
