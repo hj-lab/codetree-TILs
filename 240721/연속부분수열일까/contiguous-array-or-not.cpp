@@ -16,7 +16,7 @@ int main() {
 
     bool isRight;
 
-    for(int i=0; i<a-b; i++){
+    for(int i=0; i<=a-b; i++){
         isRight = true;
         for(int j=0; j<b; j++){
             if(arrA[i+j] != arrB[j]){
