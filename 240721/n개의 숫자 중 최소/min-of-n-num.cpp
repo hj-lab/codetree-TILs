@@ -1,11 +1,12 @@
 #include <iostream>
+#include <climits>
 using namespace std;
 
 int main() {
     int n;
     cin>>n;
     int arr[n];
-    int min_val = 100;
+    int min_val = INT_MAX;
     int cnt = 0;
 
     for(int i=0; i<n; i++){
