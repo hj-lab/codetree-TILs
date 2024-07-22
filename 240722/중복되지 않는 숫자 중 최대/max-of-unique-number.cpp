@@ -11,13 +11,12 @@ int main() {
     for(int i=0; i<N; i++){
         cin>>arr[i];
 
-        if(arr[i] >= max){
-            if(arr[i] == max){
-                max = second_max;
-            }
+        if(arr[i] > max){
             second_max = max;
             max = arr[i];
-          
+        }
+        else if(arr[i] == max){
+            max = second_max;
         }
     }
 
