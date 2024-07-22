@@ -12,7 +12,7 @@ int main() {
     for(int i=0; i<N; i++){
         cin>>arr[i];
 
-        if(arr[i] > max_first){
+        if(arr[i] > max_first && max_second > arr[i]){
             max_first = arr[i];
         }
         else if(arr[i] > max_second && arr[i] <= max_first){
