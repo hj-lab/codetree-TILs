@@ -12,6 +12,7 @@ int main() {
 
         if(arr[i] > max && arr[i] != max){
             max = arr[i];
+            cout<<"max는 "<<max<<endl;
         }
     }
 
