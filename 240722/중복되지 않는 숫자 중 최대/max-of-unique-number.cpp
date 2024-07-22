@@ -14,6 +14,8 @@ int main() {
         if(arr[i] > max){
             second_max = max;
             max = arr[i];
+
+            cout<<"second는 "<<second_max<<"max는 "<<max<<endl;
         }
         else if(arr[i] == max){
             max = second_max;
