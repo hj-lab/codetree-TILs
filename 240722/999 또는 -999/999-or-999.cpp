@@ -15,7 +15,8 @@ int main() {
         if(max < number){
             max = number;
         }
-        else if(min > number){
+        
+        if(min > number){
             min = number;
         }
     }
