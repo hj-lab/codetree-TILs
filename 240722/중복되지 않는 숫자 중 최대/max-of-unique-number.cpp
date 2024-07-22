@@ -6,13 +6,18 @@ int main() {
     cin>>N;
     int arr[N];
     int max = 0;
+    int second_max = 0;
 
     for(int i=0; i<N; i++){
         cin>>arr[i];
 
-        if(arr[i] > max && arr[i] != max){
+        if(arr[i] > max){
+            if(arr[i] == max){
+                max = second_max;
+            }
+            second_max = max;
             max = arr[i];
-            cout<<"max는 "<<max<<endl;
+          
         }
     }
 
