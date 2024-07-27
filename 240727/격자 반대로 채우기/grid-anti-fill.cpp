@@ -9,7 +9,7 @@ int main() {
     int number = 1;
 
     for(int i=n-1; i>=0; i--){
-        if(i%2 == 0){ // 홀수열일 경우
+        if((n-i)%2 == 0){ // 홀수열일 경우
             for(int j=0; j<n; j++){
                 arr[j][i] = number;
                 number++;
